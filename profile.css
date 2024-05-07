@@ -1,0 +1,105 @@
+/* Layout */
+@media (min-width: 375px) {
+  /* Mobile styles */
+  body {
+    width: 375px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* Desktop styles */
+  body {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+/* Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%) */
+.profile-card {
+  background-image: linear-gradient(360deg, white 75%, transparent 50%),
+    url(./images/bg-pattern-card.svg);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto; /* 在移动设备上水平居中 */
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.profile-card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+.trrow1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.trrow2 {
+  color: hsl(227, 10%, 46%);
+  font-size: 10px;
+}
+
+#bgtop {
+  z-index: -1; /*将图像放置在堆叠顺序的最底层 */
+  position: absolute; /*使图片成为绝对定位的元素 */
+  transform: translate(-35%, -55%);
+  background-size: contain; /* 图像尺寸将适应元素内并完全显示 */
+}
+
+#bgbot {
+  z-index: -1;
+  position: absolute;
+  transform: translate(35%, 55%);
+  background-size: contain;
+}
